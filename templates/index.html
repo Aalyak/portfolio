@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Aalya Krishnan U — Full Stack Developer{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Hello, I'm</p>
+    <h1 class="hero-name">Aalya <span class="highlight">Krishnan U</span></h1>
+    <p class="hero-title">Full Stack Software Developer</p>
+    <p class="hero-desc">
+      Building real-time data pipelines, ML systems, and full-stack web apps.
+      Passionate about clean code, agentic AI, and solving problems that actually matter.
+    </p>
+    <div class="hero-cta">
+      <a href="/projects" class="btn btn-primary">View Projects →</a>
+      <a href="/contact" class="btn btn-outline">Get in Touch</a>
+      <a href="{{ url_for('static', filename='Aalya_Krishnan_Resume_.pdf') }}"
+   class="btn btn-outline"
+   download>
+   Download Resume
+</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">9+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div>
+        <div class="stat-num">2</div>
+        <div class="stat-label">Internships</div>
+      </div>
+      <div>
+        <div class="stat-num">8.33</div>
+        <div class="stat-label">CGPA (VTU)</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+{% endblock %}

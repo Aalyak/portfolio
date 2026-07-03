@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Contact — Aalya Krishnan U{% endblock %}
+{% block content %}
+<div style="padding-top: 70px;">
+<div class="section">
+  <p class="section-eyebrow">Get In Touch</p>
+  <h1 class="section-title reveal">Contact Me</h1>
+  <p class="section-sub reveal">Open to full-time roles, internships, and interesting projects. Say hi!</p>
+
+  <div class="contact-grid">
+    <div class="contact-item reveal">
+  <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+  <div>
+    <div class="contact-label">Email</div>
+    <a href="mailto:aalyakrishnan123@gmail.com" class="contact-val">aalyakrishnan123@gmail.com</a>
+  </div>
+</div>
+
+<div class="contact-item reveal">
+  <div class="contact-icon"><i class="fas fa-phone"></i></div>
+  <div>
+    <div class="contact-label">Phone</div>
+    <a href="tel:+917204218292" class="contact-val">+91 72042 18292</a>
+  </div>
+</div>
+
+<div class="contact-item reveal">
+  <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+  <div>
+    <div class="contact-label">LinkedIn</div>
+    <a href="https://linkedin.com/in/aalya-krishnan" target="_blank" class="contact-val">linkedin.com/in/aalya-krishnan</a>
+  </div>
+</div>
+
+<div class="contact-item reveal">
+  <div class="contact-icon"><i class="fab fa-github"></i></div>
+  <div>
+    <div class="contact-label">GitHub</div>
+    <a href="https://github.com/Aalyak" target="_blank" class="contact-val">github.com/Aalyak</a>
+  </div>
+</div>
+
+<div class="contact-item reveal">
+  <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+  <div>
+    <div class="contact-label">Location</div>
+    <div class="contact-val">Bengaluru, Karnataka</div>
+  </div>
+</div>
+    </div>
+
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-input" placeholder="Your name" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-input" placeholder="your@email.com" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" placeholder="What's on your mind?"></textarea>
+      </div>
+      <a href="mailto:aalyakrishnan123@gmail.com" class="btn btn-primary" style="text-align: center; justify-content: center;">
+        Send Message →
+      </a>
+      <p style="color: var(--text-dim); font-size: 0.8rem; font-family: var(--mono); margin-top: 0.5rem;">
+        This opens your email client directly.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
