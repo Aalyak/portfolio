@@ -38,5 +38,26 @@ def download_resume():
 def test():
     return "WORKING"
 
+@app.route('/projects/adhd')
+def project_adhd():
+    return render_template('project_adhd.html')
+
+@app.route('/projects/iot')
+def project_iot():
+    return render_template('project_iot.html')
+
+@app.route('/projects/studentapi')
+def project_studentapi():
+    return render_template('project_studentapi.html')
+
+@app.route('/projects/jacc')
+def project_jacc():
+    return render_template('project_jacc.html')
+
+@app.route('/projects/emotion')
+def project_emotion():
+    return render_template('project_emotion.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
+

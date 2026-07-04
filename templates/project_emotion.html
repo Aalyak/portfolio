@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Face Emotion Detection — Aalya Krishnan U{% endblock %}
+{% block content %}
+<style>
+  .emotion-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .emotion-gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background: var(--bg2);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+</style>
+<div style="padding-top: 70px;">
+<div class="section">
+  <a href="/projects" style="color: var(--text-muted); font-family: var(--mono); font-size: 0.85rem;">← Back to Projects</a>
+  
+  <div style="margin-top: 2rem;">
+    <p class="section-eyebrow">Machine Learning Project · 2024</p>
+    <h1 class="section-title reveal">Real-Time Face Emotion Detection</h1>
+    <p class="section-sub reveal">A real-time facial emotion detection system using a 3-layer CNN trained on FER2013 dataset (35,000+ images) to classify 7 emotion categories — Angry, Disgust, Fear, Happy, Sad, Surprise and Neutral.</p>
+    
+    <div class="about-tags reveal" style="margin-bottom: 3rem;">
+      <span class="tag">TensorFlow</span>
+      <span class="tag">OpenCV</span>
+      <span class="tag">CNN</span>
+      <span class="tag">Python</span>
+      <span class="tag">Tkinter</span>
+      <span class="tag">Haar Cascade</span>
+    </div>
+  </div>
+
+  <div class="emotion-gallery reveal">
+    <img src="/static/images/emotion/emotion1.png" alt="Angry" />
+<img src="/static/images/emotion/emotion2.png" alt="Disgust" />
+<img src="/static/images/emotion/emotion3.png" alt="Fear" />
+<img src="/static/images/emotion/emotion4.png" alt="Happy" />
+<img src="/static/images/emotion/emotion5.png" alt="Sad" />
+<img src="/static/images/emotion/emotion6.png" alt="Surprise" />
+<img src="/static/images/emotion/emotion7.png" alt="Neutral" />
+  </div>
+
+</div>
+</div>
+{% endblock %}
